@@ -88,7 +88,8 @@ if __name__ == "__main__":
     jobs = []
     for i, f in enumerate(file_names):
         # extract(f, transcripts, wav_dir, write_dir, target_sr, target_channel, pitch_range, log_pitch)
-        p = multiprocessing.Process(
+        p = multiprocessing.Pool(
+            processes=multiprocessing.cpu_count()-1,
             target=extract,
             args=(f, transcripts, wav_dir, write_dir, target_sr, target_channel, pitch_range, log_pitch),
         )

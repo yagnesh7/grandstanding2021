@@ -49,4 +49,4 @@ class AudioDataset(Dataset):
             "y": torch.tensor([score], dtype=torch.float),
         }
 
-        return item
+        return (item['x'],item['y'])
