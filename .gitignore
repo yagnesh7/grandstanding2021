@@ -129,5 +129,6 @@ dmypy.json
 .pyre/
 
 outputs/npy/*
+outputs/npy2/*
 outputs/splits/*
 wavs/*
