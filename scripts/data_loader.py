@@ -43,10 +43,9 @@ class AudioDataset(Dataset):
         data_aug[: min(data.shape[0], self.trunc_pad_len), :] = data[
             : self.trunc_pad_len
         ]
-
         item = {
             "x": torch.tensor(data_aug, dtype=torch.float),
             "y": torch.tensor([score], dtype=torch.float),
         }
 
-        return item
+        return (item["x"], item["y"])
