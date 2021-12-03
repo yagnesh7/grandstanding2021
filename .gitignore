@@ -136,3 +136,4 @@ wavs2/*
 mp3s/*
 models/bert_pretrained/*
 notebooks/junk/*
+*.ckpt
