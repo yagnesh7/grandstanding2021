@@ -129,5 +129,11 @@ dmypy.json
 .pyre/
 
 outputs/npy/*
+outputs/npy2/*
 outputs/splits/*
 wavs/*
+wavs2/*
+mp3s/*
+models/bert_pretrained/*
+notebooks/junk/*
+*.ckpt
