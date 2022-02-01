@@ -128,12 +128,15 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-outputs/npy/*
-outputs/npy2/*
-outputs/splits/*
-wavs/*
-wavs2/*
-mp3s/*
-models/bert_pretrained/*
-notebooks/junk/*
+outputs/npy/
+outputs/npy2/
+outputs/splits/
+outputs/hubert/
+outputs/mp3s/
+outputs/wavs/
+wavs/
+wavs2/
+mp3s/
+models/bert_pretrained/
+notebooks/junk/
 *.ckpt
